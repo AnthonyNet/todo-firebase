@@ -70,6 +70,7 @@ function App() {
     await deleteDoc(doc(db, 'todos', id))
   }
 
+  
   return (
     <div className="App">
       <section className={style.bg} id="bg">
