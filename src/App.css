@@ -1,0 +1,14 @@
+
+#imgRotate {
+    animation: rot 5s linear infinite;
+    opacity: 0.1;
+  }
+  
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
