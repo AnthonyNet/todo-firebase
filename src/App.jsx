@@ -12,6 +12,7 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 
+
 const style = {
   bg: `grid items-center justify-items-center h-screen w-screen p-4 bg-gradient-to-r from-indigo-500 to-blue-500 relative overflow-hidden`,
   imgBg: `w-[90%] h-[90%] rounded-[200px] absolute`,
@@ -29,7 +30,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const[input, setInput] = useState('');
 
-  
+
   //Create
   const createTodo = async (e) => {
     e.preventDefault(e);
@@ -44,7 +45,7 @@ function App() {
     setInput('')
   }
 
-  //Read 
+  //Read
   useEffect(() => {
     const q = query(collection(db, "todos"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
@@ -70,13 +71,13 @@ function App() {
     await deleteDoc(doc(db, 'todos', id))
   }
 
-  
+
   return (
     <div className="App">
       <section className={style.bg} id="bg">
       <img className={style.imgBg} src={logo} id="imgRotate" />
       <div className={style.container}>
-        
+
         <h3 className={style.heading}>TODO</h3>
         <form onSubmit={createTodo} className={style.form}>
           <input value={input} onChange={(e)=>setInput(e.target.value)} className={style.input} type="text" placeholder="Add task" />
@@ -95,7 +96,7 @@ function App() {
           ))}
         </ul>
         <p className={style.count}>{todos.length<1?`You have any todos.`:`You have ${todos.length} todos.`}</p>
-           
+
       </div>
       </section>
     </div>
