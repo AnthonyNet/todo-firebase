@@ -9,7 +9,6 @@ module.exports = {
 
 
 
-
   theme: {
     extend: {},
   },
