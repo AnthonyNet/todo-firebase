@@ -18,7 +18,6 @@ const firebaseConfig = {
 };
 
 
-
 // Import Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
