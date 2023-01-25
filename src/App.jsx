@@ -45,7 +45,6 @@ function App() {
   }
 
 
-
   //Read
   useEffect(() => {
     const q = query(collection(db, "todos"));
