@@ -32,7 +32,6 @@ function App() {
 
   //Create
 
-
   const createTodo = async (e) => {
     e.preventDefault(e);
     if(input===''){
