@@ -12,9 +12,6 @@ import {
   deleteDoc,
 } from "firebase/firestore";
 
-
-
-
 const style = {
   bg: `grid items-center justify-items-center h-screen w-screen p-4 bg-gradient-to-r from-indigo-500 to-blue-500 relative overflow-hidden`,
   imgBg: `w-[90%] h-[90%] rounded-[200px] absolute`,
