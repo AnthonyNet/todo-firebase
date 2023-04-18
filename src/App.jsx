@@ -71,7 +71,6 @@ function App() {
 
 
 
-
   return (
     <div className="App">
       <section className={style.bg} id="bg">
