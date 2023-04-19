@@ -62,8 +62,9 @@ function App() {
       completed: !todo.completed,
     });
   };
-
+/* -------------------------------------------------------------------------- */
   //Delete TODOS
+  /* -------------------------------------------------------------------------- */
   const deleteTodo = async (id) => {
     await deleteDoc(doc(db, 'todos', id))
   }
