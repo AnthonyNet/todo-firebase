@@ -54,8 +54,9 @@ function App() {
     });
     return () => unsubscribe();
   }, []);
-
+/* --------------------------------------------
   //Update
+ -------------------------------------------------------------------------- */
   const toggleComplete = async (todo) => {
 
     await updateDoc(doc(db, 'todos', todo.id), {
