@@ -42,7 +42,9 @@ function App() {
     })
     setInput('')
   }
-  //Read
+  /* --------------------------------------------
+  Read
+ ----------------------------------------------- */
   useEffect(() => {
     const q = query(collection(db, "todos"));
     const unsubscribe = onSnapshot(q, (querySnapshot) => {
