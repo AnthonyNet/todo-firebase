@@ -30,7 +30,7 @@ function App() {
   const[input, setInput] = useState('');
 
   /* --------------------------------------------
-  //Create
+  Create
  ----------------------------------------------- */
 
   const createTodo = async (e) => {
