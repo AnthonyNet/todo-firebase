@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import { BiAddToQueue } from "react-icons/bi";
 import Todo from "./components/Todo";
 import { db } from "./firebase";
+import "./App.css";
+import logo from "./assets/react.svg";
+
 import {
   query,
   collection,
