@@ -26,7 +26,6 @@ const style = {
   count: `text-center p-2`,
 };
 
-
 function App() {
   const [todos, setTodos] = useState([]);
   const[input, setInput] = useState('');
