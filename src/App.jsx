@@ -22,8 +22,7 @@ const style = {
   button: `border p-2 ml-2 bg-blue-500 text-slate-100`,
   count: `text-center p-2`,
 };
-import './App.css'
-import logo from './assets/react.svg';
+
 
 function App() {
   const [todos, setTodos] = useState([]);
