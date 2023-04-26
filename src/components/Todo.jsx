@@ -1,4 +1,3 @@
-import {FC} from 'react'
 import {CiCircleRemove} from 'react-icons/ci'
 
 
@@ -23,7 +22,7 @@ const Todo = ({todo, toggleComplete, deleteTodo}) => {
         </p>
 
         </div>
-    <button onClick={() => deleteTodo(todo.id)} className={style.button}><CiCircleRemove size={30} /></button>    
+    <button onClick={() => deleteTodo(todo.id)} className={style.button}><CiCircleRemove size={30} /></button>
     </li>
   )
 }
