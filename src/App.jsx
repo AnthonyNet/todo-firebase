@@ -79,6 +79,7 @@ function App() {
 
   return (
     <div className="App">
+
       <section className={style.bg} id="bg">
       <img className={style.imgBg} src={logo} id="imgRotate" />
       <div className={style.container}>
